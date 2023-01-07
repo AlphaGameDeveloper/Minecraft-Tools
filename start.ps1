@@ -70,7 +70,8 @@ $ScriptArgs = "$args "
 try {
     Invoke-WebRequest -Uri $DownloadURL -UseBasicParsing -OutFile $FilePath -ErrorAction Stop
 } catch {
-    Write-Host $style.fg.red "ERROR: An error occured whilst 
+    Write-Host $style.fg.red "ERROR: An error occured whilst downloading the script!"
+    Write-Host $style.fg.yellow "URL: $DownloadURL"
     Write-Error $_
 }
 
