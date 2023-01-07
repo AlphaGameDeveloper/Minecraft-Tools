@@ -80,5 +80,5 @@ if (Test-Path $FilePath) {
     $item.Delete()
 } else {
     Write-Host $style.fg.red "ERROR: An error occured whilst running the script...  (Please open a GitHub issue.)!"
-    Write-Host $style.fg.yellow "ERROR: I can't find the file I just downloaded (It should have been downloaded at $FilePath !)"
+    Write-Host $style.fg.yellow "ERROR: I can\'t find the file I just downloaded (It should have been downloaded at $FilePath !)"
 }
