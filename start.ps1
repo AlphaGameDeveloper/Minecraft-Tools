@@ -46,14 +46,14 @@ $style=@(
             Default {
                 $current[$_]=$sequence -f $index++
 #comment me out
-"$($current[$_])$($_)`t" | Out-Host
+## "$($current[$_])$($_)`t" | Out-Host
             }
         }
     }
     End {
         $style
 #more demonstrations
-@(($style.bg.rgb -f 120,32,230), ($style.fg.x -f 30), 'hello', $style.default) -join '' | Out-Host
+## @(($style.bg.rgb -f 120,32,230), ($style.fg.x -f 30), 'hello', $style.default) -join '' | Out-Host
     }
 }
 
